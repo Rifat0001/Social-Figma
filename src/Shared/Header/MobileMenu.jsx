@@ -8,7 +8,7 @@ import person from '../../assets/Header/h-person.png'
 import bell from '../../assets/Header/bell-icon.png'
 import notificationIcon from '../../assets/Header/notificationIcon.png'
 import offnotification from '../../assets/Header/offnotification.png'
-const Header = () => {
+const MobileMenu = () => {
     const [notificationData, setNotificationData] = useState([])
     useEffect(() => {
         fetch('notification.json')
@@ -20,10 +20,9 @@ const Header = () => {
         setIsNotificationOn((prevState) => !prevState);
     };
     return (
-        <section className="navbar md:flex hidden  header-bg w-full px-4">
-            <div className="flex-1">
-                <Link to='/' > <img src={logo} className='logo' alt="" /></Link>
-                <Link to='/' >  <img src={text} className="mx-4" alt="" /></Link>
+        <section className="navbar header-bg  visible flex justify-between  md:hidden w-full px-6">
+            <div className="flex gap-4">
+                <Link to='/' > <img src={person} className='mobile-dp' alt="" /></Link>
                 <button className="header-icon-bg">
                     <div className="flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -31,32 +30,10 @@ const Header = () => {
                         </svg>
                     </div>
                 </button>
-
-                <p className="text-white header-mini-text ms-4">Create</p>
             </div>
-
-            {/* search field  */}
-            <div className="flex-none gap-2 ">
-                {/* input field  */}
-                <div className="form-control relative  flex">
-                    <div>
-                        <div className="search-icon absolute top-4 left-5">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.68921 0C11.9291 0 15.3779 3.44876 15.3779 7.68866C15.3779 9.68903 14.6102 11.5135 13.354 12.8827L15.8259 15.3494C16.0572 15.5808 16.058 15.955 15.8266 16.1864C15.7114 16.3032 15.559 16.3609 15.4074 16.3609C15.2566 16.3609 15.105 16.3032 14.9889 16.188L12.4872 13.6932C11.1712 14.7471 9.50255 15.3781 7.68921 15.3781C3.44931 15.3781 -0.000244141 11.9286 -0.000244141 7.68866C-0.000244141 3.44876 3.44931 0 7.68921 0ZM7.68921 1.18433C4.10227 1.18433 1.18408 4.10172 1.18408 7.68866C1.18408 11.2756 4.10227 14.1938 7.68921 14.1938C11.2754 14.1938 14.1935 11.2756 14.1935 7.68866C14.1935 4.10172 11.2754 1.18433 7.68921 1.18433Z" fill="white" />
-                                </svg>
-                            </button>
-                        </div>
-                        <input
-                            type="text"
-                            placeholder="Explore"
-                            className="head-input ps-16 text-xs"
-                        />
-                    </div>
-                </div>
-
-                {/* message icon button  */}
-
+            <Link to='/' > <img src={logo} className='logo' alt="" /></Link>
+            {/* notification icons  */}
+            <div className="flex">
                 <div className="dropdown dropdown-bottom dropdown-end">
                     <button tabIndex={0} className="header-icon-bg mx-2">
                         <div className="flex justify-center content-center mt-4">
@@ -71,7 +48,7 @@ const Header = () => {
                     </button>
                     <ul
                         tabIndex={0}
-                        className="dropdown-content  z-[100] menu p-2 shadow bg-msg rounded-md w-[430px]"
+                        className="dropdown-content  z-[100] menu p-2 shadow bg-msg rounded-md w-[300px] md:w-[430px]"
                     >
                         <li className="msg-border">
                             <div className="flex  items-start gap-5">
@@ -120,7 +97,7 @@ const Header = () => {
                             <p className="notification-text">99+</p>
                         </div>
                     </button>
-                    <div className="dropdown-content z-[100] menu p-2 shadow bg-msg rounded-md w-[430px]">
+                    <div className="dropdown-content z-[100] menu p-2 shadow bg-msg rounded-md w-[350px] md:w-[430px]">
                         <button className="flex text-white items-center justify-start gap-3 notification-border border-[1px] border-l-0 my-3 -ml-2" onClick={handleDivClick}>
                             <img src={isNotificationOn ? notificationIcon : offnotification} alt="" />
                             <h2>{isNotificationOn ? 'Turn off the notification sound' : 'Turn on the notification sound'}</h2>
@@ -167,45 +144,41 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-
-                <div className="mx-4">
-                    <p className="header-person-name">Alexa Dain</p>
-                    <p className="gradient-mail">@Alexadain1</p>
-                </div>
-                <div className="dropdown dropdown-end">
-                    <div tabIndex={0} className="btn btn-ghost btn-circle avatar ">
-                        <div className="w-10 rounded-full">
-                            <img src={person} />
-                        </div>
-                        <div className="header-profile-arrow  items-center flex justify-center">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
-                                    <path d="M0.129218 0.129218C0.285845 -0.0274098 0.530941 -0.0416487 0.703654 0.086501L0.753135 0.129218L4.55882 3.93471L8.36451 0.129218C8.52114 -0.0274098 8.76624 -0.0416487 8.93895 0.086501L8.98843 0.129218C9.14506 0.285845 9.1593 0.530941 9.03115 0.703654L8.98843 0.753135L4.87078 4.87078C4.71416 5.02741 4.46906 5.04165 4.29635 4.9135L4.24686 4.87078L0.129218 0.753135C-0.0430725 0.580845 -0.0430725 0.301508 0.129218 0.129218Z" fill="white" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <ul
-                        tabIndex={0}
-                        className="mt-3 p-2  shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-                    >
-                        <li>
-                            <a className="justify-between">
-                                Profile
-                                <span className="badge">New</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>Settings</a>
-                        </li>
-                        <li>
-                            <a>Logout</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </section>
+
+            {/* <div className="dropdown dropdown-end">
+                <div tabIndex={0} className="btn btn-ghost btn-circle avatar ">
+                    <div className="w-10 rounded-full">
+                        <img src={person} />
+                    </div>
+                    <div className="header-profile-arrow  items-center flex justify-center">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path d="M0.129218 0.129218C0.285845 -0.0274098 0.530941 -0.0416487 0.703654 0.086501L0.753135 0.129218L4.55882 3.93471L8.36451 0.129218C8.52114 -0.0274098 8.76624 -0.0416487 8.93895 0.086501L8.98843 0.129218C9.14506 0.285845 9.1593 0.530941 9.03115 0.703654L8.98843 0.753135L4.87078 4.87078C4.71416 5.02741 4.46906 5.04165 4.29635 4.9135L4.24686 4.87078L0.129218 0.753135C-0.0430725 0.580845 -0.0430725 0.301508 0.129218 0.129218Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <ul
+                    tabIndex={0}
+                    className="mt-3 p-2  shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                >
+                    <li>
+                        <a className="justify-between">
+                            Profile
+                            <span className="badge">New</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>Settings</a>
+                    </li>
+                    <li>
+                        <a>Logout</a>
+                    </li>
+                </ul>
+            </div> */}
+        </section >
     );
 };
 
-export default Header;
+export default MobileMenu;
