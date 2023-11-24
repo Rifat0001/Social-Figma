@@ -1,0 +1,8 @@
+.homeLayout {
+    display: grid;
+    /* grid-template-columns: 5rem 20rem 52rem 18rem; */
+    grid-template-columns: 5% 20% 60% auto;
+    gap: 10px;
+    background-color: #0A123E;
+    width: 100%;
+}

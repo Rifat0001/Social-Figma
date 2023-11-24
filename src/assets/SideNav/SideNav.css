@@ -1,0 +1,25 @@
+.side-icon {
+    background-color: #050C36;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    color: white;
+}
+
+.side-icon:hover {
+    background: linear-gradient(139deg, #EC46E5 16.91%, #00E7FC 59.32%, #8729FF 100%);
+    color: #0A123E;
+    border-radius: 10px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.active-icon {
+    background: linear-gradient(139deg, #EC46E5 16.91%, #00E7FC 59.32%, #8729FF 100%);
+    color: #0A123E;
+    border-radius: 10px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
