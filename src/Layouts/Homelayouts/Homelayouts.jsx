@@ -9,6 +9,9 @@ const Homelayouts = () => {
     return (
         <div>
             <Header></Header>
+            <div className="bottom-border">
+
+            </div>
             <MobileMenu></MobileMenu>
             <div className="homeLayout">
                 <SideNav></SideNav>

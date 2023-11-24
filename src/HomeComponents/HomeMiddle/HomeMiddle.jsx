@@ -1,9 +1,10 @@
 import React from 'react';
-
+import Story from './HomeMiniParts/Story/Story';
+import './HomeMiddle.css'
 const HomeMiddle = () => {
     return (
-        <div className='bg-warning'>
-            d
+        <div className='home-middle-bg'>
+            <Story></Story>
         </div>
     );
 };
