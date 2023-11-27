@@ -22,8 +22,8 @@ const Header = () => {
     return (
         <section className="navbar md:flex hidden  header-bg w-full px-4">
             <div className="flex-1">
-                <Link to='/' > <img src={logo} className='logo' alt="" /></Link>
-                <Link to='/' >  <img src={text} className="mx-4" alt="" /></Link>
+                <Link to='/forYou' > <img src={logo} className='logo' alt="" /></Link>
+                <Link to='/forYou' >  <img src={text} className="mx-4" alt="" /></Link>
                 <button className="header-icon-bg">
                     <div className="flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">

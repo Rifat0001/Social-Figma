@@ -1,0 +1,12 @@
+.double-img {
+    width: full;
+    height: 207px;
+    flex-shrink: 0;
+    border: 2px solid;
+    border-image: linear-gradient(139.69deg, #00E7FC 2.07%, #EC46E5 98.58%) 1;
+    background:
+        linear-gradient(#00072D, #00072D)padding-box,
+        linear-gradient(139.69deg, #00E7FC 2.07%, #EC46E5 98.58%)border-box;
+    border-radius: 12px;
+    padding: 1px;
+}
