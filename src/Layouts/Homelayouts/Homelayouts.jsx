@@ -1,4 +1,6 @@
+import { Outlet } from "react-router-dom";
 import HomeMiddle from "../../HomeComponents/HomeMiddle/HomeMiddle";
+import TopFromFilter from "../../HomeComponents/HomeMiddle/HomeMiniParts/TopFromFilter/TopFromFilter";
 import HomeSecondCol from "../../HomeComponents/HomeSecondCol/HomeSecondCol";
 import Message from "../../HomeComponents/Message/Message";
 import SideNav from "../../HomeComponents/SideNav/SideNav";
@@ -16,7 +18,11 @@ const Homelayouts = () => {
             <div className="homeLayout">
                 <SideNav></SideNav>
                 <HomeSecondCol></HomeSecondCol>
-                <HomeMiddle></HomeMiddle>
+                <div className="home-middle-layout">
+                    <TopFromFilter></TopFromFilter>
+                    <Outlet></Outlet>
+                </div>
+                {/* <HomeMiddle></HomeMiddle> */}
                 <Message></Message>
             </div>
         </div>

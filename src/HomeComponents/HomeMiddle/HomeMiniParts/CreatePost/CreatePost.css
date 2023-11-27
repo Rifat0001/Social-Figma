@@ -1,0 +1,26 @@
+.give-post {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.write-post {
+    height: 65px;
+    background-color: #00072D;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.profile-create-img {
+    width: 77px;
+    height: 65px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    border-radius: 12px;
+    padding: 1px;
+    border: 3px solid;
+    border-style: solid;
+    border-image: linear-gradient(164.27deg, #00E7FC 1.15%, rgba(0, 0, 0, 0) 47.83%, #EC46E5 89.01%) 1;
+    background:
+        linear-gradient(#00072D, #00072D)padding-box,
+        linear-gradient(to bottom, #08E2FB 0%, #0A123E 51.04%, #EC46E5 100%)border-box;
+}
