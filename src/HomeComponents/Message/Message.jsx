@@ -4,8 +4,8 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import './Message.css'
 const Message = () => {
     return (
-        <div className='bg-[#0A123E]'>
-            <div className='flex items-center justify-around my-5  message-bt  '>
+        <div className='bg-[#0A123E] hidden md:block'>
+            <div className='flex  items-center justify-around my-5  message-bt  '>
                 <h2 className="message-top-text">
                     Messages
                 </h2>

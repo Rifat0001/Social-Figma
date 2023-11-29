@@ -2,17 +2,17 @@ import { FaHeart, FaRegComments } from 'react-icons/fa';
 
 const Reactions = () => {
     return (
-        <div className="text-end">
+        <div className="text-end ">
             <div className="stats shadow bg-[rgba(255,255,255,0.10)] rounded-[12px] border-y-[1px]">
-                <div className="flex items-center justify-center gap-3 px-2">
+                <div className="flex items-center justify-center md:gap-3 gap-1 md:px-2 px-1">
                     <div className=" text-white">200.8K</div>
                     <FaHeart color="#FF0000" />
                 </div>
-                <div className="pro-side flex justify-center items-center gap-5 px-2">
+                <div className="pro-side flex justify-center items-center md:gap-5 gap-1 md:px-2 px-1">
                     <h2 className="text-white">4.2K</h2>
                     <FaRegComments color="#3ADF00" />
                 </div>
-                <div className="pro-side flex justify-center items-center gap-7 px-2">
+                <div className="pro-side flex justify-center items-center md:gap-7 gap-2 md:px-2 px-1">
                     <h2 className="text-white">24</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
                         <path d="M8.2 1C9.4 1 10 1.5555 10 2.6665V6.54401C10 7.63851 9.154 8.06201 8.116 7.49001L7.324 7.05001C7.144 6.95101 6.856 6.95101 6.676 7.05001L5.884 7.49001C4.846 8.06201 4 7.63851 4 6.54401V2.6665C4 1.5555 4.6 1 5.8 1H8.2Z" stroke="#B82BEA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -20,7 +20,7 @@ const Reactions = () => {
                     </svg>
                 </div>
 
-                <div className="pro-side flex items-center justify-center gap-10 px-2">
+                <div className="pro-side flex items-center justify-center md:gap-10 gap-1 md:px-2 px-1">
                     <h2 className="text-white">1</h2>
                     <div className="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21" fill="none">

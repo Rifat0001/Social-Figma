@@ -181,6 +181,25 @@
     background: -webkit-linear-gradient(70deg, #00E7FC 2.07%, #EC46E5 98.58%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 14px;
+}
+
+.profile-name {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .profile-user {
+        background: -webkit-linear-gradient(70deg, #00E7FC 2.07%, #EC46E5 98.58%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 11px;
+    }
+
+    .profile-name {
+        font-size: 12px;
+    }
 }
 
 .friend-req {

@@ -26,18 +26,19 @@ const TwoPhoto1 = () => {
                 <div className="flex items-start justify-between">
                     <div className="flex items-center justify-start gap-5">
                         <img className='post-profile-img' src={Img} alt="" />
-
                         <div className="flex-col">
                             <p className="flex items-center justify-start gap-2">
-                                <span>Oblivion Isme</span>
-
-                                <span className="text-[10px]">Added Photos</span>
+                                <span className="profile-name">Oblivion Isme</span>
+                                <span className=" profile-user md:hidden block">@Oblivion1122</span>
+                                <span className="text-[10px] hidden md:block">changed his profile banner</span>
                             </p>
                             <p className="flex items-center gap-3">
-                                <span className="text-[16px] profile-user">@Oblivion1122</span>
-                                <span className="text-xs">12 S - Translate</span>
-                                <FaGlobe />
-                                <FaAngleDown />
+                                <span className=" profile-user hidden md:block">@Oblivion1122</span>
+                                <span className="text-xs">12 s</span>
+                                <div className=" hidden md:block">
+                                    <FaGlobe />
+                                    <FaAngleDown />
+                                </div>
                             </p>
                         </div>
                         <div></div>
@@ -47,13 +48,13 @@ const TwoPhoto1 = () => {
                     </div>
                 </div>
                 <div className="space-y-[40px] me-6">
-                    <div className="ps-[105px] pt-3 space-y-4">
-                        <h2 className=" ">
+                    <div className="md:ps-[105px] md:ms-0 ms-10 pt-3 space-y-4">
+                        <h2 className="">
                             “Hi All , i am sharing my recent fun posts here , share your
                             thoughts.”{" "}
                         </h2>
                         <div className="flex items-center gap-5">
-                            <img src={image1} className='double-img w-1/2' alt="" />
+                            <img src={image1} className='double-img w- md:w-1/2 ' alt="" />
                             <img src={image2} className='double-img w-1/2' alt="" />
                         </div>
                     </div>
@@ -67,34 +68,37 @@ const TwoPhoto1 = () => {
             </div>
             <div className="">
                 {/* <!-- Card 1 --> */}
-                <div className="transform ps-16 transition cursor-pointer  ml-10 relative flex items-center px-6 py-4 text-white rounded mb-1  flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform reply-two md:ps-16 transition cursor-pointer  md:ml-10 relative flex items-center md:px-6 md:py-4 text-white rounded mb-2  flex-col md:flex-row  md:space-y-0">
                     {/* <!-- Line that connecting the box with the vertical line --> */}
-                    <div className="w-14 h-0.5 bg-[#00E7FC] absolute top-8 left-[2px] z-0"></div>
+                    <div className="w-14 h-0.5 bg-[#00E7FC] absolute top-8 left-[2px] z-0 hidden md:block "></div>
 
                     {/* <!-- Content that showing in the box --> */}
                     <div className="time2">
                         <div className="flex items-start justify-start gap-2">
                             <img src={image3} alt="" className='comment-profile-img' />
-                            <div>
-                                <div className="p-3 rounded-xl border-[1px] border-b-0 shadow-lg">
-                                    <div className="flex items-center justify-between gap-20">
+                            <div className='w-[]'>
+                                <div className="md:p-3 p-2 rounded-xl border-[1px] border-b-0 shadow-lg">
+                                    <div className="flex items-center justify-between md:gap-20 gap-4">
                                         <div className="flex items-center justify-between gap-3">
-                                            <span className="font-bold">Juan Gutierrez</span>
-                                            <span className="text-[16px] profile-user">
+                                            <span className="font-bold text-[12px] md:text-[16px]">Juan Gutierrez</span>
+                                            <span className="md:text-[16px] profile-user text-[11px]">
                                                 @juangutierrz110
                                             </span>
-                                            <span className="text-[#A6A6A6]">1 W</span>
+                                            <span className="text-[8px] md:text-[12px] text-[#A6A6A6]">1 W</span>
                                         </div>
                                         <div className="flex gap-3">
                                             <FaExclamationCircle color="#8F8F8F" />
                                             <FaTrashAlt color="#8F8F8F" />
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-[20px] profile-user">
-                                            @Oblivion1122
-                                        </span>
-                                        <span>wow !! what a view , i love it </span>
+                                    <div className="flex  gap-2">
+                                        <p>
+                                            <span className="text-[20px] me-2 profile-user">
+                                                @Oblivion1122
+                                            </span>
+                                            <span className=" pr-20">
+                                                looking great , where are you now?{" "}
+                                            </span></p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
@@ -118,22 +122,22 @@ const TwoPhoto1 = () => {
                 </div>
                 {/* second card */}
 
-                <div className="transform ps-16 for-you-two-reply transition cursor-pointer  ml-10 relative flex items-center px-6 py-4 text-white rounded mb-1 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform for-you-two-reply md:ps-16 transition cursor-pointer  md:ml-10 relative flex items-center md:px-6 md:py-4 text-white rounded mb-1  flex-col md:flex-row  md:space-y-0">
                     {/* <!-- Line that connecting the box with the vertical line --> */}
-                    <div className="w-14 h-0.5 bg-[#00E7FC] absolute top-8 left-[2px] z-0"></div>
+                    <div className="w-14 h-0.5 bg-[#00E7FC] absolute top-8 left-[2px] z-0 hidden md:block "></div>
 
                     {/* <!-- Content that showing in the box --> */}
                     <div className="flex items-start justify-start gap-2">
                         <img src={image3} alt="" className='comment-profile-img ' />
                         <div>
-                            <div className="p-3 rounded-xl border-[1px] border-b-0 shadow-lg">
-                                <div className="flex items-center justify-between gap-20">
+                            <div className="md:p-3 p-2 rounded-xl border-[1px] border-b-0 shadow-lg">
+                                <div className="flex items-center justify-between md:gap-20 gap-4">
                                     <div className="flex items-center justify-between gap-3">
-                                        <span className="font-bold">Juan Gutierrez</span>
-                                        <span className="text-[16px] profile-user">
+                                        <span className="font-bold text-[12px] md:text-[16px]">Juan Gutierrez</span>
+                                        <span className="md:text-[16px] profile-user text-[11px]">
                                             @juangutierrz110
                                         </span>
-                                        <span className="text-[#A6A6A6]">5 d</span>
+                                        <span className="text-[8px] md:text-[12px] text-[#A6A6A6]">1 W</span>
                                     </div>
                                     <div className="flex gap-3">
                                         <FaExclamationCircle color="#8F8F8F" />
@@ -169,35 +173,36 @@ const TwoPhoto1 = () => {
                     </div>
                 </div>
                 {/* reply of comment 3 */}
-                <div className="transform transition cursor-pointer  ml-10 relative flex items-center px-6 ps-32 py-4 text-white rounded mb-1 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer  md:ml-10 relative flex items-center md:px-6 md:ps-32 ps-9 md:py-4 text-white rounded mb-2 flex-col md:flex-row  md:space-y-0">
                     {/* <!-- Line that connecting the box with the vertical line --> */}
-                    <div className="w-[38px] h-0.5 bg-[#00E7FC] absolute top-8 left-[85px] z-0"></div>
-
+                    <div className="md:w-[38px] w-2 h-0.5  md:block bg-[#00E7FC] absolute md:top-8 top-5 left-[25px] md:left-[85px] z-0"></div>
                     {/* <!-- Content that showing in the box --> */}
                     <div className="time2">
                         <div className="flex items-start justify-start gap-2">
                             <img src={image5} alt="" className='comment-profile-img' />
                             <div>
-                                <div className="p-3 rounded-xl border-[1px] border-b-0 shadow-lg">
-                                    <div className="flex items-center justify-between gap-20">
+                                <div className="md:p-3 p-2 rounded-xl border-[1px] border-b-0 shadow-lg">
+                                    <div className="flex items-center justify-between md:gap-20 gap-4">
                                         <div className="flex items-center justify-between gap-3">
-
-                                            <span className="font-bold">Kevin Alexander</span>
-                                            <span className="text-[16px] profile-user">
-                                                @kevinalexa3546
+                                            <span className="font-bold text-[12px] md:text-[16px]">Kevin Alexander</span>
+                                            <span className="md:text-[16px] profile-user text-[11px]">
+                                                @Kevilexander
                                             </span>
-                                            <span className="text-[#A6A6A6]">1 W</span>
+
                                         </div>
                                         <div className="flex gap-3">
                                             <FaExclamationCircle color="#8F8F8F" />
                                             <FaTrashAlt color="#8F8F8F" />
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-[20px] profile-user">
-                                            @Oblivion1122
-                                        </span>
-                                        <span>wow !! what a view , i love it </span>
+                                    <div className="flex  gap-2">
+                                        <p>
+                                            <span className="text-[20px] me-2 profile-user">
+                                                @Oblivion1122
+                                            </span>
+                                            <span className=" pr-20">
+                                                wow it seems like a movie scene i wish i was There.. sorry I was busy doing some other stuff.
+                                            </span></p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
@@ -220,35 +225,37 @@ const TwoPhoto1 = () => {
                     </div>
                 </div>
                 {/* reply of comment 3 */}
-                <div className="transform transition cursor-pointer  ml-10 relative flex items-center px-6 ps-32 py-4 text-white rounded mb-1 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer  md:ml-10 relative flex items-center md:px-6 md:ps-32 ps-9 md:py-4 text-white rounded mb-2 flex-col md:flex-row  md:space-y-0">
                     {/* <!-- Line that connecting the box with the vertical line --> */}
-                    <div className="w-[38px] h-0.5 bg-[#00E7FC] absolute top-8 left-[85px] z-0"></div>
+                    <div className="md:w-[38px] w-2 h-0.5  md:block bg-[#00E7FC] absolute md:top-8 top-5 left-[25px] md:left-[85px] z-0"></div>
 
                     {/* <!-- Content that showing in the box --> */}
                     <div className="time2">
                         <div className="flex items-start justify-start gap-2">
                             <img src={image5} alt="" className='comment-profile-img' />
                             <div>
-                                <div className="p-3 rounded-xl border-[1px] border-b-0 shadow-lg">
-                                    <div className="flex items-center justify-between gap-20">
+                                <div className="md:p-3 p-2 rounded-xl border-[1px] border-b-0 shadow-lg">
+                                    <div className="flex items-center justify-between md:gap-20 gap-4">
                                         <div className="flex items-center justify-between gap-3">
-
-                                            <span className="font-bold">Kevin Alexander</span>
-                                            <span className="text-[16px] profile-user">
-                                                @kevinalexa3546
+                                            <span className="font-bold text-[12px] md:text-[16px]">Kevin Alexander</span>
+                                            <span className="md:text-[16px] profile-user text-[11px]">
+                                                @Kevilexander
                                             </span>
-                                            <span className="text-[#A6A6A6]">1 W</span>
+
                                         </div>
                                         <div className="flex gap-3">
                                             <FaExclamationCircle color="#8F8F8F" />
                                             <FaTrashAlt color="#8F8F8F" />
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-[20px] profile-user">
-                                            @Oblivion1122
-                                        </span>
-                                        <span>wow !! what a view , i love it </span>
+                                    <div className="flex  gap-2">
+                                        <p>
+                                            <span className="text-[20px] me-2 profile-user">
+                                                @Oblivion1122
+                                            </span>
+                                            <span className=" pr-20">
+                                                wow it seems like a movie scene i wish i was There.. sorry I was busy doing some other stuff.
+                                            </span></p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
@@ -271,35 +278,37 @@ const TwoPhoto1 = () => {
                     </div>
                 </div>
                 {/* third card */}
-                <div className="transform transition cursor-pointer  ml-10 relative flex ps-16 items-center px-6 py-4 text-white rounded mb-1 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform  md:ps-16 transition cursor-pointer  md:ml-10 relative flex items-center md:px-6 md:py-4 text-white rounded mb-1  flex-col md:flex-row  md:space-y-0">
                     {/* <!-- Line that connecting the box with the vertical line --> */}
-                    <div className="w-14 h-0.5 bg-[#00E7FC] absolute top-8 left-[2px] z-0"></div>
+                    <div className="w-14 h-0.5 bg-[#00E7FC] absolute top-8 left-[2px] z-0 hidden md:block "></div>
 
                     {/* <!-- Content that showing in the box --> */}
                     <div className="flex items-start justify-start gap-2">
-                        <img src={image4} alt="" className='comment-profile-img' />
+                        <img src={image4} alt="" className='comment-profile-img ' />
                         <div>
-                            <div className="p-3 rounded-xl border-[1px] border-b-0 shadow-lg">
-                                <div className="flex items-center justify-between gap-20">
+                            <div className="md:p-3 p-2 rounded-xl border-[1px] border-b-0 shadow-lg">
+                                <div className="flex items-center justify-between md:gap-20 gap-4">
                                     <div className="flex items-center justify-between gap-3">
-                                        <span className="font-bold">Kevin Alexander</span>
-                                        <span className="text-[16px] profile-user">
-                                            @kevinalexa3546
+                                        <span className="font-bold text-[12px] md:text-[16px]">Kevin Alexander</span>
+                                        <span className="md:text-[16px] profile-user text-[11px]">
+                                            @Kevilexander
                                         </span>
-                                        <span className="text-[#A6A6A6]">20 h</span>
+                                        <span className="text-[8px] md:text-[12px] text-[#A6A6A6]">1 W</span>
                                     </div>
                                     <div className="flex gap-3">
                                         <FaExclamationCircle color="#8F8F8F" />
                                         <FaTrashAlt color="#8F8F8F" />
                                     </div>
                                 </div>
-                                <p className=" pr-20">
-                                    <span className="text-[20px] profile-user">
-                                        @Oblivion1122
-                                    </span> {' '}
-                                    wow it seems like a movie scene i wish i was
-                                    There.. sorry I was busy doing some other stuff.{" "}
-                                </p>
+                                <div className="flex  gap-2">
+                                    <p>
+                                        <span className="text-[20px] me-2 profile-user">
+                                            @Oblivion1122
+                                        </span>
+                                        <span className=" pr-20">
+                                            wow it seems like a movie scene i wish i was There.. sorry I was busy doing some other stuff.
+                                        </span></p>
+                                </div>
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="text-start py-4">
@@ -318,7 +327,6 @@ const TwoPhoto1 = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div className="">
                     <Reply></Reply>

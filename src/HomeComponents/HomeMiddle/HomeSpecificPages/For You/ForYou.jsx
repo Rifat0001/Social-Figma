@@ -6,7 +6,7 @@ import AudioPost from '../../../Posts/Foryouparts/AudioPost/AudioPost';
 
 const ForYou = () => {
     return (
-        <div className='mx-6 bg-[#0A123E] rounded-xl px-8 pb-80 pt-6'>
+        <div className='mx-3 md:mx-6 bg-[#0A123E] rounded-xl md:px-8 px-3 pb-80 pt-6'>
             <SingleImage></SingleImage>
             <SingleImage2></SingleImage2>
             <AudioPost></AudioPost>

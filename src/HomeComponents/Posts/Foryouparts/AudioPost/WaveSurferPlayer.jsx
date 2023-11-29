@@ -45,9 +45,8 @@ const WaveSurferPlayer = (props) => {
                             {isPlaying ? <img className='mike-ad' src={mike} alt="" /> : <img className='mike-ad' src={mike} alt="" />}
                         </button>
                     </div>
-                    <div ref={containerRef} style={{ minHeight: '50px', minWidth: '500px' }} />
+                    <div ref={containerRef} style={{ minHeight: '50px', minWidth: '100px' }} />
                 </div>
-
                 <p className="time-audio ">{currentTime} sec </p>
             </div>
         </>

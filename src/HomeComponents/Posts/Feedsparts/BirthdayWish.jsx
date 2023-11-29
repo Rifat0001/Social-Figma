@@ -23,13 +23,18 @@ const BirthdayWish = () => {
 
                         <div className="flex-col">
                             <p className="flex items-center justify-start gap-2">
-                                <span>Oblivion Isme</span>
+                                <div className="flex flex-col">
+                                    <span className="profile-name" >Oblivion Isme</span>
+                                    <span className="text-[16px] profile-user md:hidden block">@Oblivion1122</span>
+                                </div>
                                 <FaArrowRight />
-                                <Link to='/othersProfile/timeline/feeds'> Kevin Alexander</Link>
-                                <span className="text-[16px] profile-user">@kevinalexa3546</span>
+                                <div className="flex md:flex-row md:gap-3 gap-0 flex-col">
+                                    <Link to='/othersProfile/timeline/feeds' className="profile-name"> Kevin Alexander</Link>
+                                    <span className="text-[16px] profile-user">@kevinalexa3546</span>
+                                </div>
                             </p>
-                            <p className="flex items-center gap-3">
-                                <span className="text-[16px] profile-user">@Oblivion1122</span>
+                            <p className="flex md:mt-0 mt-2 items-center gap-3">
+                                <span className="text-[16px] profile-user hidden md:block">@Oblivion1122</span>
                                 <span className="text-xs">now</span>
                                 <FaGlobe />
                                 <FaAngleDown />
@@ -44,14 +49,14 @@ const BirthdayWish = () => {
                     </div>
                 </div>
 
-                <div className="space-y-[20px] ms-24">
+                <div className="space-y-[20px] ms-10">
                     <div className=" pt-3 space-y-4">
                         <p className="post-text">happy birthdayyyy</p>
                     </div>
                     <Reactions></Reactions>
                 </div>
             </div>
-            <div className="ms-10"> <CommentSection></CommentSection></div>
+            <div className=""> <CommentSection></CommentSection></div>
         </div>
     );
 };

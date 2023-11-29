@@ -1,7 +1,7 @@
 .homeLayout {
     display: grid;
-    /* grid-template-columns: 5rem 20rem 52rem 18rem; */
-    grid-template-columns: 5% 20% 58% auto;
+    grid-template-columns: 5rem 19rem 55rem 14rem;
+    /* grid-template-columns: 5% 20% 58% auto; */
     gap: 10px;
     background-color: #0A123E;
     width: 100%;
@@ -18,4 +18,15 @@
     gap: 10px;
     background-color: #0A123E;
     width: 100%;
+}
+
+/* Default styles for all devices */
+
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media only screen and (max-width: 767px) {
+
+
+    .homeLayout {
+        display: block;
+    }
 }

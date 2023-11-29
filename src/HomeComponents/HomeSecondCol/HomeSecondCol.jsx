@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
 import './HomeSecondCol.css'
 const HomeSecondCol = () => {
     return (
-        <div className="mt-5 mb-10">
+        <div className="mt-5 hidden md:block  mb-10">
             {/* background image behind the profile pic  */}
             <div>
                 <img src={bg} className="profile-cover" alt="" />

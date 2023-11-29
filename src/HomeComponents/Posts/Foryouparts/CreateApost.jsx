@@ -25,15 +25,17 @@ const CreateApost = () => {
 
                             <div className="flex-col">
                                 <p className="flex items-center justify-start gap-2">
-                                    <span>Oblivion Isme</span>
-
-                                    <span className="text-[10px]">create a post</span>
+                                    <span className="profile-name">Oblivion Isme</span>
+                                    <span className=" profile-user md:hidden block">@Oblivion1122</span>
+                                    <span className="text-[10px] hidden md:block">changed his profile banner</span>
                                 </p>
                                 <p className="flex items-center gap-3">
-                                    <span className="text-[16px] profile-user">@Oblivion1122</span>
+                                    <span className=" profile-user hidden md:block">@Oblivion1122</span>
                                     <span className="text-xs">12 s</span>
-                                    <FaGlobe />
-                                    <FaAngleDown />
+                                    <div className=" hidden md:block">
+                                        <FaGlobe />
+                                        <FaAngleDown />
+                                    </div>
                                 </p>
                             </div>
                             <div></div>
@@ -46,7 +48,7 @@ const CreateApost = () => {
                     </div>
 
                     <div className="space-y-[20px]">
-                        <div className=" pt-3 space-y-4">
+                        <div className="md:ms-0 ms-9 pt-3 space-y-4">
                             <p className="post-text">Music event update interested ppl can dm me for more information</p>
                         </div>
                         <Reactions></Reactions>

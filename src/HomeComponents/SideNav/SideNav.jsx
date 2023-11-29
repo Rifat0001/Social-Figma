@@ -3,7 +3,7 @@ import { faHouse, faStarOfLife, faBookOpen, faBoxArchive, faBriefcase, faGear, f
 import './SideNav.css'
 const SideNav = () => {
     return (
-        <div className=' text-center flex justify-center '>
+        <div className=' text-center  justify-center hidden md:block '>
             <div>
                 <div className='mt-5 '>
                     <button className='active-icon'>

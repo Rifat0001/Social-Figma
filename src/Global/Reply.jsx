@@ -5,7 +5,7 @@ import emoji from '../assets/HomeMainFeeds/CreatePost/emj.png'
 import send from '../assets/HomeMainFeeds/CreatePost/send.png'
 const Reply = () => {
     return (
-        <div className="ms-24">
+        <div className="ms-24 hidden">
             <div className="flex items-center justify-start gap-2">
                 <img src={image5} alt="" className='reply-profile-img' />
                 <div>

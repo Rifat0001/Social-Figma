@@ -13,16 +13,25 @@
         linear-gradient(to bottom, #08E2FB 0%, #0A123E 51.04%, #EC46E5 100%)border-box;
 }
 
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media only screen and (max-width: 767px) {
 
-.post-text {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    /* 94.118% */
+    .post-profile-img {
+        width: 53.055px;
+        height: 45.318px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        padding: 1px;
+        border: 1px solid;
+        border-style: solid;
+        border-image: linear-gradient(164.27deg, #00E7FC 1.15%, rgba(0, 0, 0, 0) 47.83%, #EC46E5 89.01%) 1;
+        background:
+            linear-gradient(#00072D, #00072D)padding-box,
+            linear-gradient(to bottom, #08E2FB 0%, #0A123E 51.04%, #EC46E5 100%)border-box;
+    }
 }
+
+
 
 /* for you two 1  */
 
@@ -43,7 +52,7 @@
     content: "";
     display: block;
     width: 2px;
-    height: 1072px;
+    height: 1108px;
     background: #00E7FC;
     margin: 0 auto;
     position: absolute;
@@ -56,7 +65,7 @@
     content: "";
     display: block;
     width: 2px;
-    height: 320px;
+    height: 337px;
     background: #00E7FC;
     margin: 0 auto;
     position: absolute;
@@ -76,4 +85,43 @@
     top: 58px;
     left: 85px;
 
+}
+
+@media only screen and (max-width: 767px) {
+    .for-you-two:before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 260px;
+        background: #00E7FC;
+        margin: 0 auto;
+        position: absolute;
+        top: 50px;
+        left: 25px;
+
+    }
+
+    .reply-two:before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 104px;
+        background: #00E7FC;
+        margin: 0 auto;
+        position: absolute;
+        top: 42px;
+        left: 25px;
+    }
+
+    .for-you-two-reply:before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 492px;
+        background: #00E7FC;
+        margin: 0 auto;
+        position: absolute;
+        top: 42px;
+        left: 25px;
+    }
 }

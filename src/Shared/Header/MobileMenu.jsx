@@ -20,7 +20,7 @@ const MobileMenu = () => {
         setIsNotificationOn((prevState) => !prevState);
     };
     return (
-        <section className="navbar header-bg  visible flex justify-between  md:hidden w-full px-6">
+        <section className="navbar header-bg  flex justify-between  md:hidden visible w-full px-6">
             <div className="flex gap-4">
                 <Link to='/' > <img src={person} className='mobile-dp' alt="" /></Link>
                 <button className="header-icon-bg">
